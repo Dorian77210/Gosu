@@ -1,0 +1,11 @@
+{
+    "characters": [
+        {
+            "x": 100,
+            "y": 100,
+            "text": "Hello i'm a test",
+            "imagePath": "./orcs.png",
+            "spriteIndex": 0
+        }
+    ]
+}
