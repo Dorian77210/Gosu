@@ -1,0 +1,8 @@
+{
+    "keyboard": {
+        "down": "down",
+        "up": "up",
+        "right": "right",
+        "left": "left"
+    }
+}

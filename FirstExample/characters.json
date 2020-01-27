@@ -5,7 +5,7 @@
             "y": 100,
             "text": "Hello i'm a test",
             "imagePath": "./orcs.png",
-            "spriteIndex": 0
+            "spriteIndex": 1
         }
     ]
 }

@@ -56,4 +56,18 @@ class Orc
         end
     end
 
+    def get_coords_front_of
+        coords = {'x' => @x / @@ORC_WIDTH, 'y' => @y / @@ORC_HEIGHT}
+        if @direction === 'down'
+            coords['y'] -= 1
+        elsif direction === 'top'
+            coords['y'] += 1
+        elsif direction === 'right'  
+            coords['x'] += 1
+        else
+            coords['x'] -= 1
+        end
+        coords
+    end
+
 end
