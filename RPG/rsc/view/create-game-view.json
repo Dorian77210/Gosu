@@ -1,0 +1,19 @@
+{
+    "config": {
+        "components": [
+            {
+                "type": "DialogBox",
+                "id": "CreateGameDialogBox",
+                "x": "0",
+                "y": "400",
+                "path": "../assets/images/dialog-box.png",
+                "extra": {
+                    "dialogs": [
+                        "Welcome to the Ruby's kingdom ! You will begin a fantastic adventure incarnating a true hero.",
+                        "Your objective is simple : you have to find the lost ruby stolen by the Dark kingdom."
+                    ]
+                }
+            }
+        ]
+    }
+}

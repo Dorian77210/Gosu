@@ -4,7 +4,7 @@ module Utils
     WINDOW_HEIGHT = 600
 
     # Hero constants
-    HERO_PATH_SPRITESHEET = './../assets/perso-spritesheet.png'
+    HERO_PATH_SPRITESHEET = './../assets/images/perso-spritesheet.png'
     HERO_SPRITESHEET_WIDTH = 128
     HERO_SPRITESHEET_HEIGHT = 194
     HERO_WIDTH = HERO_SPRITESHEET_WIDTH / 4
@@ -16,10 +16,21 @@ module Utils
     # keyboard config
     KEYBOARD_CONFIG = './../rsc/keyboard.json'
 
+    # Direction enumeration
     module Direction
         UP = 'up'
         DOWN = 'down'
         RIGHT = 'right'
         LEFT = 'left'
+    end
+
+    # Game state enumeration
+    module GameState
+        HOME = 'HOME',
+        CREATE_GAME = 'CREATE_GAME'
+    end
+
+    module ComponentId
+        CREATE_GAME = 'CreateGame'
     end
 end

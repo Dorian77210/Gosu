@@ -1,6 +1,9 @@
 require 'gosu'
+require 'json'
 
 require './utils/constants'
+require './ui/components/component'
+require './ui/components/dialog-box'
 
 class ResourceLoader
 
@@ -19,6 +22,22 @@ class ResourceLoader
 
         # return
         sprites
+    end
+
+    # Load a graphical component
+    def self.load_component(json)
+        # load the image
+        path = json['path']
+        image = Gosu::Image.new path
+        clazz = Object.const_get(json['type'])
+        component = clazz.new(image, json['x'].to_f, json['y'].to_f, json['id'], json['extra'])
+        component
+    end
+
+    def self.load_json_file(path)
+        stream = File.open path
+        json = JSON.parse(stream.read)
+        json
     end
 
 end

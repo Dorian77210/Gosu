@@ -1,0 +1,14 @@
+{
+    "config": {
+        "components": [
+            {
+                "type": "Component",
+                "id": "CreateGame",
+                "x": "150",
+                "y": "150",
+                "path": "../assets/images/create_game.png",
+                "extra": {}
+            }
+        ]
+    }
+}
