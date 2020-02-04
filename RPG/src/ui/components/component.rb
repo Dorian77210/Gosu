@@ -1,13 +1,16 @@
 class Component
 
-    attr_reader :image, :x, :y, :id, :extra
+    attr_reader :image, :x, :y, :id, :extra, :parent
+    attr_accessor :is_enabled
 
-    def initialize(image, x, y, id, extra = nil)
+    def initialize(parent, image, x, y, id, extra = nil)
         @image = image
         @x = x
         @y = y
         @id = id
         @extra = extra
+        @parent = parent
+        @is_enabled = true
     end
 
     def draw

@@ -31,6 +31,13 @@ module Utils
     end
 
     module ComponentId
+        # Create Game view
         CREATE_GAME = 'CreateGame'
+        CREATE_GAME_DIALOG_BOX = "CreateGameDialogBox"
+        CREATE_GAME_YES_CHOICE = "CreateGameYesChoice"
+        CREATE_GAME_NO_CHOICE = "CreateGameNoChoice"
+
+        YES_CHOICE = "YesChoice"
+        NO_CHOICE = "NoChoice"
     end
 end

@@ -39,6 +39,11 @@ class GameWindow < Gosu::Window
         true
     end
 
+    # @Override
+    def button_up(event_id)
+        @current_view.react_to_event event_id
+    end
+
     def change_game_state (state, params = nil)
         @game_state = state
 

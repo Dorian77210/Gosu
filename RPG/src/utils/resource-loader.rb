@@ -25,12 +25,12 @@ class ResourceLoader
     end
 
     # Load a graphical component
-    def self.load_component(json)
+    def self.load_component(parent, json)
         # load the image
         path = json['path']
         image = Gosu::Image.new path
         clazz = Object.const_get(json['type'])
-        component = clazz.new(image, json['x'].to_f, json['y'].to_f, json['id'], json['extra'])
+        component = clazz.new(parent, image, json['x'].to_f, json['y'].to_f, json['id'], json['extra'])
         component
     end
 

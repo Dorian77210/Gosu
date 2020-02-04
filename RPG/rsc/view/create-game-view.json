@@ -9,10 +9,31 @@
                 "path": "../assets/images/dialog-box.png",
                 "extra": {
                     "dialogs": [
-                        "Welcome to the Ruby's kingdom ! You will begin a fantastic adventure incarnating a true hero.",
-                        "Your objective is simple : you have to find the lost ruby stolen by the Dark kingdom."
+                        "Welcome to the Ruby's kingdom ! \nYou will begin a fantastic adventure incarnating a true hero.\n",
+                        "Your objective is simple : \n you have to find the lost ruby stolen by the Dark kingdom.",
+                        "Are you ready to begin the adventure ?"
+                    ],
+                    "triggers": [
+                        {
+                            "type": "DisplayComponents",
+                            "dialogIndex": 2
+                        }
                     ]
                 }
+            },
+            {
+                "type": "Component",
+                "id": "YesChoice",
+                "x": "150",
+                "y": "50",
+                "path": "../assets/images/yes.png"
+            },
+            {
+                "type": "Component",
+                "id": "NoChoice",
+                "x": "350",
+                "y": "50",
+                "path": "../assets/images/no.png"
             }
         ]
     }

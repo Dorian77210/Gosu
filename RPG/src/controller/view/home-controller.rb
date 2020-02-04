@@ -15,7 +15,7 @@ class HomeController
         config = json['config']
         components = config['components']
         components.each do |component|
-            @home_view.components << ResourceLoader.load_component(component)
+            @home_view.components << ResourceLoader.load_component(@home_view, component)
         end
     end
 
